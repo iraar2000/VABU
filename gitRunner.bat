@@ -55,7 +55,7 @@ if "%runnCommand%"=="3" (
 
     git remote remove origin 2>nul
 
-    git remote add origin "%repoURL%"
+    git remote add origin !repoURL!
 
     if errorlevel 1 (
         echo Setting repository URL failed.
