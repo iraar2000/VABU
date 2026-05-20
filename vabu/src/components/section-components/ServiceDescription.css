@@ -1,0 +1,51 @@
+.description-section {
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  gap: 60px;
+}
+
+.description-section .section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.description-section .description-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* description heading section designing */
+.description-section-wrapper .section-heading {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.section-heading .heading {
+  font-size: var(--font-size-lv6);
+  color: var(--text-title-color);
+  font-weight: var(--font-weight-lv8);
+}
+
+.section-heading .subheading {
+  max-width: 640px;
+  text-align: center;
+  font-weight: var(--font-weight-lv4);
+  font-size: var(--font-size-lv2);
+  color: var(--text-subtitle-color);
+  line-height: 24px;
+}
+
+.description-section-wrapper .service-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}

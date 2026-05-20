@@ -2,15 +2,33 @@
 setlocal enabledelayedexpansion
 
 echo Git commands.
-echo       1. Pull from existing repository.
-echo       2. Push to existing repository.
-echo       3. Connect to existing repository, github-url.
+echo       1. commit to the local repository
+echo       2. Pull from existing repository.
+echo       3. Push to existing repository. 
+echo       4. Connect to existing repository, github-url.
 
 set /p runnCommand="select git command (1, 2, 3): "
 
 if "%runnCommand%"=="1" (
 
-    git pull origin main
+    set /p commitMessage="Commit message: "
+
+    git add .
+
+    git status
+
+    git commit -m "!commitMessage!"
+
+    if errorlevel 1 (
+        echo Commit failed.
+        pause
+        exit /b
+    )
+)
+
+if "%runnCommand%"=="2" (
+
+    git pull origin Main
 
     if errorlevel 1 (
         echo Pull failed.
@@ -21,24 +39,13 @@ if "%runnCommand%"=="1" (
     echo Pull successful.
 )
 
+if "%runnCommand%"=="3" (
 
-if "%runnCommand%"=="2" (
+    set /p branch="repository branch: "
 
-    set /p commitMessage="Commit message: "
+    git branch -M %branch%
 
-    git add .
-
-    git commit -m "!commitMessage!"
-
-    if errorlevel 1 (
-        echo Commit failed.
-        pause
-        exit /b
-    )
-
-    git branch -M main
-
-    git push -u origin main
+    git push -u origin !branch!
 
     if errorlevel 1 (
         echo Push failed.
@@ -49,7 +56,7 @@ if "%runnCommand%"=="2" (
     echo Push successful.
 )
 
-if "%runnCommand%"=="3" (
+if "%runnCommand%"=="4" (
 
     set /p repoURL="Enter repository URL: "
 

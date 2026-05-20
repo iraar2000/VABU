@@ -1,0 +1,95 @@
+/* menu section designing */
+.menu {
+  width: 100%;
+  padding: 10px 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* menu content container */
+.menu-content {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+
+/* website logo design */
+.menu-content .logo-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.logo-container .logo-background {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 3px solid var(--secondary-color);
+  border-bottom: 0px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container .company-name {
+  font-size: var(--font-size-lv3);
+  font-weight: var(--font-weight-lv7);
+  color: var(--accent-color-primary);
+}
+
+/* designing the menu navigator */
+.menu-content .menu-page-navigator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu-page-navigator .menu-navigation-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+.menu-navigation-list li {
+  padding: 4px 16px;
+  background-color: var(--primary-color);
+  font-size: var(--font-size-lv1);
+  font-weight: var(--font-weight-lv6);
+  color: var(--text-title-color);
+  white-space: nowrap;
+}
+
+.menu-navigation-list li.active {
+  background-color: var(--accent-color-secondary);
+  color: var(--text-white-color);
+}
+
+.menu-navigation-list li:hover {
+  cursor: pointer;
+  background-color: var(--accent-color-forth);
+  color: var(--text-white-color);
+}
+
+.menu-socialmedia-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-socialmedia-link .socialmedia-link-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.socialmedia-link-list .socialmedia-link {
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+}
