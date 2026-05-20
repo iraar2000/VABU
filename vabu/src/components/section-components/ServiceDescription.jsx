@@ -32,7 +32,7 @@ function ServiceDescription() {
 
     return (
         <section className='description-section'>
-            <div className='wrapper-main-size section-container'>
+            <div className='wrapper-main-size description-section-container'>
                 <div className="description-section-wrapper">
                     <div className="service-wrapper">
                         <ServiceDescriptionCard description={descriptions[0]}/>

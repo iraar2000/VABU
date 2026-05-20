@@ -1,0 +1,96 @@
+.review-card-container {
+  background-color: var(--accent-color-secondary);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(80px);
+
+  padding: 20px;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.review-card-container .separator-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background-color: var(--accent-color-primary);
+  width: fit-content;
+  height: fit-content;
+}
+
+.review-card-container .review-content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent-color-secondary);
+}
+
+.review-content .review-icon {
+  width: 100%;
+  height: fit-content;
+}
+
+.review-icon .icon {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--accent-color-primary);
+  width: fit-content;
+  height: fit-content;
+}
+
+.review-content .review-comment-container {
+  margin: 20px 0;
+  height: fit-content;
+}
+
+.review-comment-container .review-comment {
+  color: rgb(251, 251, 251, 1);
+  font-size: var(--font-size-lv1);
+  font-weight: var(--font-weight-lv3);
+  line-height: 20px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.review-profile-details {
+  background-color: var(--accent-color-secondary);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.review-profile-details .profile-image {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #0028ee;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-profile-details {
+  padding-top: 16px;
+}
+
+.profile-info .userName {
+  font-size: var(--font-size-lv1);
+  font-weight: var(--font-weight-lv7);
+  line-height: 12px;
+}
+
+.profile-info .userTitle {
+  font-size: calc(var(--font-size-lv1) / 1.25);
+  font-weight: var(--font-weight-lv5);
+  color: #959595;
+  line-height: 12px;
+}

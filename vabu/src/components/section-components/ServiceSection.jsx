@@ -14,9 +14,9 @@ function ServiceSection() {
 
     return (
         <section className="service-section" id="service-section">
-            <div className="wrapper-main-size section-container">
+            <div className="wrapper-main-size service-section-container">
                 {/* the section heading container */}
-                <div className="section-heading">
+                <div className="service-section-heading">
                     <p className="heading">Service We Provide</p>
                     <p className="sub-heading">Professional, reliable, and customer-focused solutions tailored to simplify international processes, support your ambitions, and create seamless global opportunities for individuals and businesses worldwide.</p>
                 </div>
