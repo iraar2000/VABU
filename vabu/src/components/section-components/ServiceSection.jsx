@@ -13,6 +13,7 @@ function ServiceSection() {
     ]
 
     return (
+        // the services section
         <section className="service-section" id="service-section">
             <div className="wrapper-main-size service-section-container">
                 {/* the section heading container */}

@@ -1,0 +1,71 @@
+.visa-service-listing-section {
+  gap: 12px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 700px;
+}
+
+.visa-service-listing-section .vsl-section-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 60px;
+}
+
+/* visa service listing section heading design */
+.vsl-section-container .vsl-section-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: fit-content;
+  width: 100%;
+  gap: 8px;
+}
+
+.vsl-section-heading .heading {
+  font-size: var(--font-size-lv6);
+  color: var(--text-title-color);
+  font-weight: var(--font-weight-lv8);
+}
+
+.vsl-section-heading .subheading {
+  width: 800px;
+  text-align: left;
+  height: fit-content;
+  font-weight: var(--font-weight-lv4);
+  font-size: var(--font-size-lv2);
+  color: var(--text-gray-color);
+  line-height: 24px;
+}
+
+/* visa service listing content design */
+.vsl-section-container .vsl-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vsl-content-container .visa-listing-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.visa-listing-container > * {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

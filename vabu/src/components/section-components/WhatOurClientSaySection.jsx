@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import "./WhatOurClientSaySection.css"
+import "./WhatOurClientSaySection.css";
 import ReviewCard from "@objcomponent/reviewCard";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 function WhatOurClientSaySection() {
 
     // this sets the first value to retrieve 
-    const ITEMS_PER_PAGE = 4;
+    const ITEMS_PER_PAGE = 8;
     const [startIndex, setStartIndex] = useState(0);
+    const [slideDirection, setSlideDirection] = useState("left");
 
     const reviewData = [
         {profileImage: "/src/assets/prof1.jpg",userName: "John. A", userTitle: "Software Engineer", comment: "The scholarship support was incredibly helpful. They guided me through every step of the application process and made everything much easier."},
@@ -33,6 +34,11 @@ function WhatOurClientSaySection() {
     ]
 
      function rightScrollHandler() {
+
+        // setting the sliding direction
+        setSlideDirection("left");
+
+        // setting the starting index
         setStartIndex((prev) => {
             const next = prev + ITEMS_PER_PAGE;
 
@@ -45,6 +51,9 @@ function WhatOurClientSaySection() {
     }
 
     function leftScrollHandler() {
+
+        setSlideDirection("right");
+
         setStartIndex((prev) => {
             const next = prev - ITEMS_PER_PAGE;
 
@@ -57,6 +66,7 @@ function WhatOurClientSaySection() {
     }
 
     return (
+        // the testimonial section
         <section className="what-our-client-say-section">
             <div className="wrapper-main-size wocss-section-container">
                 <div className="wocss-section-heading">
@@ -65,7 +75,7 @@ function WhatOurClientSaySection() {
                 </div>
                 <div className="wocss-section-content">
                     {
-                        reviewData.slice(startIndex, startIndex + ITEMS_PER_PAGE).map((review, index) => <div key={`${startIndex}-${review.userName}-${index}`} className="review-animation"><ReviewCard  review={review}/></div>)
+                        reviewData.slice(startIndex, startIndex + ITEMS_PER_PAGE).map((review, index) => <div key={`${startIndex}-${review.userName}-${index}`} className={`review-animation-${slideDirection}`}><ReviewCard  review={review}/></div>)
                     }
                     <button className="left-scroll" onClick={leftScrollHandler}><FaAngleLeft/></button>
                     <button className="right-scroll" onClick={rightScrollHandler}><FaAngleRight/></button>

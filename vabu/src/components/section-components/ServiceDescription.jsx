@@ -31,24 +31,21 @@ function ServiceDescription() {
     ]
 
     return (
+        // the service description section
         <section className='description-section'>
             <div className='wrapper-main-size description-section-container'>
-                <div className="description-section-wrapper">
-                    <div className="service-wrapper">
-                        <ServiceDescriptionCard description={descriptions[0]}/>
-                        <ServiceDescriptionCard description={descriptions[1]}/>
-                    </div>
-                    <div className='section-heading'>
-                        <h2 className="heading">Our Professional Services</h2>
-                        <p className="subheading">
-                        We provide reliable, efficient, and globally focused solutions designed to support individuals and businesses
-                        through every step of their journey — from documentation to delivery.
-                        </p>
-                    </div>
-                    <div className="service-wrapper">
-                        <ServiceDescriptionCard description={descriptions[2]}/>
-                        <ServiceDescriptionCard description={descriptions[3]}/>
-                    </div>
+                <div className='section-heading'>
+                    <h2 className="heading">Our Professional Services</h2>
+                    <p className="subheading">
+                    We provide reliable, efficient, and globally focused solutions designed to support individuals and businesses
+                    through every step of their journey — from documentation to delivery.
+                    </p>
+                </div>
+                <div className="service-wrapper">
+                    <ServiceDescriptionCard description={descriptions[0]}/>
+                    <ServiceDescriptionCard description={descriptions[1]}/>
+                    <ServiceDescriptionCard description={descriptions[2]}/>
+                    <ServiceDescriptionCard description={descriptions[3]}/>
                 </div>
             </div>
         </section>

@@ -1,6 +1,7 @@
-import "./ScholarshipPage.css"
 import MenuSection from '@sctcomponent/MenuSection';
 import HeroSection from '@sctcomponent/HeroSection';
+import FooterSection from "@sctcomponent/FooterSection";
+import ScholarshipListingSection from '../section-components/ScholarshipListingSection';
 
 function ScholarshipPage () {
     return (
@@ -10,6 +11,12 @@ function ScholarshipPage () {
 
             {/* hero section of the web page */}
             <HeroSection/>
+
+            {/* the listing section of the page */}
+            <ScholarshipListingSection/>
+
+            {/* the footer section */}
+            <FooterSection/>
         </div>
     )
 }

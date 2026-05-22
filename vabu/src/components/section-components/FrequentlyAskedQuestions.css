@@ -1,49 +1,50 @@
-.service-section {
-  background-color: var(--primary-color);
+.faq-section {
   width: 100%;
   height: fit-content;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
 }
 
-.service-section-container {
+.faq-section .faq-section-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
+  gap: 60px;
 }
 
-.service-section-container .service-section-heading {
+.faq-section-container .faq-section-heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
-  width: fit-content;
-  gap: 24px;
-  flex: 0 0 464px;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
 }
 
-.service-section-heading .heading {
+.faq-section-heading .heading {
   font-size: var(--font-size-lv6);
   color: var(--text-title-color);
   font-weight: var(--font-weight-lv8);
 }
 
-.service-section-heading .sub-heading {
-  width: 464px;
+.faq-section-heading .subheading {
+  width: 800px;
   height: fit-content;
   font-weight: var(--font-weight-lv4);
   font-size: var(--font-size-lv2);
   color: var(--text-subtitle-color);
   line-height: 24px;
+  text-align: center;
 }
 
-/* the services card designing */
-.service-section .service-cards {
+.faq-section-container .faq-section-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
 }

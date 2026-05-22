@@ -67,7 +67,7 @@ function ServiceDescriptionCard({description}) {
 
                 <div className="description-card-buttons">
                     <div className="contactUs-btn">contact us</div>
-                    <div className="gotoWebsite-btn">visit page</div>
+                    {/* <div className="gotoWebsite-btn">visit page</div> */}
                 </div>
             </div>
         </div>

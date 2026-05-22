@@ -1,0 +1,95 @@
+.footer-section {
+  width: 100%;
+  background-color: var(--accent-color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section .footer-section-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-section-container .footer-company-description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-company-description .company-name-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.company-name-logo .company-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.company-name-logo .company-name {
+  color: var(--text-white-color);
+  font-weight: var(--font-weight-lv5);
+  font-size: var(--font-size-lv2);
+}
+
+.footer-company-description .social-media-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-media-link .social-icon > * {
+  height: 24px;
+  width: 24px;
+  border-radius: 8px;
+  fill: var(--text-gray-color);
+}
+
+.footer-company-description .description {
+  color: var(--text-gray-color);
+  font-size: var(--font-size-lv1);
+  font-weight: var(--font-weight-lv4);
+  line-height: 16px;
+  width: 250px;
+}
+
+/* the footer designing area */
+.footer-section-container .footer-web-navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  width: 50%;
+}
+
+.footer-web-navigation .navigators-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navigators-container .navigators-title {
+  font-size: var(--font-size-lv2);
+  font-weight: var(--font-weight-lv5);
+  color: var(--text-white-color);
+}
+
+.services-links .navigation-link {
+  font-size: var(--font-size-lv1);
+  font-weight: var(--font-weight-lv4);
+  color: var(--text-gray-color);
+  line-height: 32px;
+}
+
+.services-links .navigation-link:hover {
+  text-decoration: underline;
+  color: var(--accent-color-forth);
+  line-height: 32px;
+}

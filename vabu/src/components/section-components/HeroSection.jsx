@@ -13,8 +13,8 @@ function HeroSection() {
     const [index, setIndex] = useState(0);
     const [fade, setFade] = useState(true);
 
-    //   the hero section 
     return (
+        // the hero section
         <section id="hero-section">
             <div className="hero-container">
                 <ImageSlider imageUrl={images}/>

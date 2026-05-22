@@ -70,6 +70,29 @@ body {
   line-height: var(--font-lineHeight-lv5);
 }
 
+.scroll-bar {
+  --sb-track-color: transparent;
+  --sb-thumb-color: var(--text-gray-color);
+  --sb-size: 4px;
+  overflow: hidden;
+}
+
+.scroll-bar::-webkit-scrollbar {
+  width: var(--sb-size);
+  margin: 10px 0;
+}
+
+.scroll-bar::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 0 10px 10px 0;
+  padding: 10px 0;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
+}
+
 .root {
   display: flex;
   width: 100%;
@@ -78,8 +101,8 @@ body {
 /* main wrapper styling */
 .wrapper-main-size {
   width: 1440px;
-  padding: 54px;
-  overflow: hidden;
+  padding: 0 54px;
+  height: fit-content;
 }
 
 .wrapper-center-items {

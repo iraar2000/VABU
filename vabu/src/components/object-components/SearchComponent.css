@@ -1,0 +1,150 @@
+.search-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.search-component .filters-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.filters-container .filter-value {
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  background-color: #f3f3f3;
+  border: 1px solid #a8a8a8;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 280px;
+
+  gap: 100px;
+}
+
+.filters-container .filter-value.shadow {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.filters-container .filter-value:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.filter-value .value {
+  line-height: 16px;
+  font-size: var(--font-size-lv1);
+  font-weight: var(--font-weight-lv6);
+  color: #5e5e5e;
+}
+
+.filter-value .arrow {
+  padding: 5px;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+}
+
+.filter-value .arrow > * {
+  height: 12px;
+  width: 12px;
+  fill: #757575;
+  stroke: #757575;
+}
+
+.search-component .search-button {
+  padding: 7px 20px;
+  background-color: #173eff;
+  color: var(--primary-color);
+  font-weight: var(--font-weight-lv4);
+  font-size: var(--font-size-lv1);
+  border-radius: 20px;
+  box-shadow: 0 0 5px var(--accent-color-primary);
+}
+
+.search-component .search-button:hover {
+  background-color: #001fba;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+}
+
+.container .dropdown-content {
+  height: 300px;
+  min-width: 280px;
+  overflow-y: auto;
+  padding: 10px;
+  z-index: 999;
+
+  position: absolute;
+  top: 110%;
+  left: 0;
+
+  border-radius: 10px;
+
+  background-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+
+  pointer-events: none;
+
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.container .dropdown-content.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+
+  pointer-events: auto;
+}
+
+/* .container .dropdown-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+
+  pointer-events: none;
+} */
+
+.dropdown-content .selector-value-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  height: fit-content;
+  width: 100%;
+}
+
+.dropdown-content .dropdown-title {
+  color: var(--text-gray-color);
+  padding: 5px;
+  text-transform: capitalize;
+  font-size: var(--font-size-lv2);
+}
+
+.selector-value-container .selection-value {
+  background-color: var(--primary-color);
+  padding: 10px 10px;
+  font-weight: var(--font-weight-lv7);
+  border-radius: 10px;
+  font-size: var(--font-size-lv1);
+}
+
+.selector-value-container .selection-value:hover {
+  background-color: var(--accent-color-secondary);
+  color: var(--text-white-color);
+  border-radius: 10px;
+  cursor: pointer;
+}

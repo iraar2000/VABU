@@ -1,22 +1,21 @@
 /* card designing */
 .description-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: stretch;
-  gap: 20px;
-  width: 100%;
+  gap: 10px;
+  width: 300px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
-  padding: 20px;
   box-sizing: border-box;
-  background-color: var(--accent-color-secondary);
+  background-color: var(--primary-color);
   z-index: 1;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: background-color 300ms ease-in-out;
+  overflow: hidden;
 }
 
 .description-card:hover {
-  background-color: var(--accent-color-primary);
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 4px 10px rgba(72, 75, 255, 0.5);
 }
 
 .description-card:hover .description-card-image .dc-image {
@@ -32,7 +31,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 12px;
+  /* border-radius: 12px; */
 }
 
 .description-card-image .dc-image {
@@ -49,6 +48,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  padding: 0px 10px 10px 10px;
 }
 
 /* description heading of the card designing */
@@ -56,7 +56,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 20px;
+  gap: 10px;
 }
 
 .description-card-headings .heading-subheading {
@@ -66,9 +66,9 @@
 }
 
 .heading-subheading .heading {
-  font-size: var(--font-size-lv3);
+  font-size: var(--font-size-lv2);
   font-weight: var(--font-weight-lv7);
-  color: #c2ccff;
+  color: var(--text-title-color);
 }
 
 /* service icons sttyling */
@@ -93,7 +93,7 @@
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   border-left: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.03);
 }
 
@@ -160,9 +160,9 @@
 
 /* description linking button designing */
 .description-card-buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   width: 100%;
   height: fit-content;
 }
@@ -176,15 +176,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid #002af9;
   color: var(--text-white-color);
 }
 
 .description-card-buttons .gotoWebsite-btn {
-  background-color: inherit;
+  background-color: #4362ff;
   border: 1px solid var(--accent-color-tertiary);
-  color: #cad3ff;
+  color: var(--text-white-color);
 }
 
 .description-card-buttons .contactUs-btn:hover {

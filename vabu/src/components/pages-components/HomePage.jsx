@@ -1,9 +1,10 @@
-import './HomePage.css'
 import MenuSection from '@sctcomponent/MenuSection';
 import HeroSection from '@sctcomponent/HeroSection';
 import ServiceSection from '@sctcomponent/serviceSection';
 import ServiceDescription from '@sctcomponent/ServiceDescription';
 import WhatOurClientSaySection from '@sctcomponent/WhatOurClientSaySection';
+import FrequentlyAskedQuestions from '@sctcomponent/FrequentlyAskedQuestions';
+import FooterSection from '@sctcomponent/FooterSection';
 
 function HomePage () {
     return (
@@ -23,6 +24,12 @@ function HomePage () {
 
             {/* what our client say section */}
             <WhatOurClientSaySection/>
+
+            {/* the frequently asked question section */}
+            <FrequentlyAskedQuestions/>
+
+            {/* the footer section design */}
+            <FooterSection/>
 
         </div>
     );

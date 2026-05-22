@@ -1,7 +1,7 @@
 .review-card-container {
-  background-color: var(--accent-color-secondary);
+  background-color: var(--secondary-color);
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(80px);
 
   padding: 20px;
@@ -21,7 +21,7 @@
 .review-card-container .review-content {
   display: flex;
   flex-direction: column;
-  background-color: var(--accent-color-secondary);
+  background-color: var(--secondary-color);
 }
 
 .review-content .review-icon {
@@ -32,7 +32,7 @@
 .review-icon .icon {
   padding: 12px;
   border-radius: 8px;
-  background-color: var(--accent-color-primary);
+  background-color: var(--accent-color-secondary);
   width: fit-content;
   height: fit-content;
 }
@@ -43,9 +43,9 @@
 }
 
 .review-comment-container .review-comment {
-  color: rgb(251, 251, 251, 1);
+  color: rgb(42, 42, 42);
   font-size: var(--font-size-lv1);
-  font-weight: var(--font-weight-lv3);
+  font-weight: var(--font-weight-lv4);
   line-height: 20px;
 
   display: -webkit-box;
@@ -55,7 +55,7 @@
 }
 
 .review-profile-details {
-  background-color: var(--accent-color-secondary);
+  background-color: var(--secondary-color);
 
   display: flex;
   flex-direction: row;

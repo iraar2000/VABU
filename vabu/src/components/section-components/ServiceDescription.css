@@ -11,22 +11,17 @@
 .description-section .description-section-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-}
-
-.description-section .description-section-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 60px;
 }
 
 /* description heading section designing */
-.description-section-wrapper .section-heading {
+.description-section-container .section-heading {
   all: unset;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0;
 }
 
 .section-heading .heading {
@@ -44,8 +39,10 @@
   line-height: 24px;
 }
 
-.description-section-wrapper .service-wrapper {
+.description-section-container .service-wrapper {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }

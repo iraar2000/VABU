@@ -1,4 +1,3 @@
-import "./ContactsPage.css"
 import MenuSection from '@sctcomponent/MenuSection';
 import HeroSection from '@sctcomponent/HeroSection';
 

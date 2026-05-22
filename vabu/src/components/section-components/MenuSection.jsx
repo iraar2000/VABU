@@ -18,6 +18,7 @@ function MenuSection() {
     ]
 
     return (
+        // the menu section
         <section className='menu' id="menu">
             <div className="menu-content">
                 {/* menu logo  */}
