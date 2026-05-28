@@ -9,10 +9,8 @@ function MenuSection() {
 
     const menuList = [
         {link:"/", name:"Home"},
-        {link:"/visa", name:"Visa Application"},
-        {link:"/scholarships", name:"Scholarship"},
-        {link:"/shipping", name:"Shipping"},
-        {link:"/products", name:"Products"},
+        {link:"/scholarships", name:"Services"},
+        {link: "/products", name:"Products"},
         {link:"/contacts", name:"Contact Us"},
         {link:"/aboutus", name:"About Us"}
     ]
@@ -42,19 +40,19 @@ function MenuSection() {
                 </div>
             </div>
 
-            {/* the links to the social media accounts of the company */}
+            {/* the links to the social media accounts of the company
             <div className='menu-socialmedia-link'>
                 <ul className='socialmedia-link-list'>
-                    {/* whatsapp link */}
+                    //
                     <li className='socialmedia-link'>
                         <SocialIcon url="https://www.wa.me/250" network='whatsapp' style={{height:30, width:30, color: "black"}}/>
                     </li>
-                    {/* facebook link */}
+                    facebook link
                     <li className='socialmedia-link'>
                         <SocialIcon url="https://www.facebook.com" network='facebook' style={{height:30, width:30, color: "black"}}/>
                     </li>
                 </ul>
-            </div>
+            </div> */}
         </section>
     )
 }

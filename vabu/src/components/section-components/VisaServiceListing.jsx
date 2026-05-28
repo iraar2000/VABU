@@ -31,7 +31,7 @@ function VisaServiceListing() {
                     {/* visa listing container */}
                     <div className="visa-listing-container">
                         {visaDetails.map((detail, index) => 
-                            <div key={`${detail.title}-${index}`} className="animation-wrapper" style={{ animationDelay: `${index * 0.05}s` }}>
+                            <div key={`${detail.heading}-${index}`} className="animation-wrapper" style={{ animationDelay: `${index * 0.05}s` }}>
                                 <VisaCard visaDetail={detail}/>
                             </div>
                         )}

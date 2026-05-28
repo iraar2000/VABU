@@ -75,6 +75,7 @@ body {
   --sb-thumb-color: var(--text-gray-color);
   --sb-size: 4px;
   overflow: hidden;
+  user-select: none;
 }
 
 .scroll-bar::-webkit-scrollbar {

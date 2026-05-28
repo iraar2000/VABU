@@ -1,0 +1,74 @@
+.scholarship-listing-section {
+  gap: 12px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 700px;
+}
+
+.scholarship-listing-section .schl-section-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 60px;
+}
+
+/* visa service listing section heading design */
+.schl-section-container .schl-section-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: fit-content;
+  width: 100%;
+  gap: 8px;
+}
+
+.schl-section-heading .heading {
+  font-size: var(--font-size-lv6);
+  color: var(--text-title-color);
+  font-weight: var(--font-weight-lv8);
+}
+
+.schl-section-heading .subheading {
+  width: 800px;
+  text-align: left;
+  height: fit-content;
+  font-weight: var(--font-weight-lv4);
+  font-size: var(--font-size-lv2);
+  color: var(--text-subtitle-color);
+  line-height: 24px;
+}
+
+/* visa service listing content design */
+.schl-section-container .schl-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.schl-section-container .schl-listing-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-wrapper {
+  animation: slide-in 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

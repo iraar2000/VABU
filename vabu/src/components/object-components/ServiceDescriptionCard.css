@@ -5,7 +5,7 @@
   align-items: stretch;
   gap: 10px;
   width: 300px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   background-color: var(--primary-color);
   z-index: 1;
@@ -15,7 +15,7 @@
 }
 
 .description-card:hover {
-  box-shadow: 2px 4px 10px rgba(72, 75, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .description-card:hover .description-card-image .dc-image {
@@ -188,12 +188,11 @@
 }
 
 .description-card-buttons .contactUs-btn:hover {
-  box-shadow: 0px 0px 5px var(--accent-color-tertiary);
-  transform: scale(1.02);
-  background-color: var(--accent-color-secondary);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
 }
 
 .description-card-buttons .gotoWebsite-btn:hover {
   box-shadow: 0px 0px 5px var(--accent-color-tertiary);
-  transform: scale(1.02);
+  transform: scale(1.01);
 }

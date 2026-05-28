@@ -6,8 +6,9 @@ echo       1. commit to the local repository
 echo       2. Pull from existing repository.
 echo       3. Push to existing repository. 
 echo       4. Connect to existing repository, github-url.
+echo       5. undo last commit.   
 
-set /p runnCommand="select git command (1, 2, 3): "
+set /p runnCommand="select git command: "
 
 if "%runnCommand%"=="1" (
 
@@ -73,6 +74,19 @@ if "%runnCommand%"=="4" (
     echo Repository URL set successfully.
 
     git remote -v
+)
+
+if "%runnCommand%"=="5" (
+
+    git reset --soft HEAD~1
+
+    if errorlevel 1 (
+        echo Undo last commit failed.
+        pause
+        exit /b
+    )
+
+    echo Last commit undone successfully.
 )
 
 pause

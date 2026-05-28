@@ -65,7 +65,7 @@
   font-weight: var(--font-weight-lv4);
   font-size: var(--font-size-lv1);
   border-radius: 20px;
-  box-shadow: 0 0 5px var(--accent-color-primary);
+  box-shadow: 0 0 5px var(--accent-color-tertiary);
 }
 
 .search-component .search-button:hover {

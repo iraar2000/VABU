@@ -1,0 +1,45 @@
+.whychooseus-card {
+  box-shadow: 0 0 10px rgba(0, 38, 255, 0.2);
+  border-radius: 30px;
+  width: 100%;
+  padding: 24px;
+  background-color: var(--primary-color);
+  aspect-ratio: 3/2;
+}
+
+.whychooseus-card .content-wrapper {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-wrapper .icon-container {
+  padding: 12px;
+  background-color: var(--secondary-color);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+}
+
+.icon-container svg {
+  width: 32px;
+  height: 32px;
+  stroke: var(--icon-gray-color);
+  fill: var(--accent-color-tertiary);
+  stroke: var(--accent-color-secondary);
+}
+
+.wcu-content .title {
+  font-size: var(--font-size-lv3);
+  font-weight: var(--font-weight-lv8);
+  color: var(--text-title-color);
+  line-height: 40px;
+}
+
+.wcu-content .description {
+  font-size: var(--font-size-lv2);
+  color: var(--text-subtitle-color);
+  line-height: 20px;
+}

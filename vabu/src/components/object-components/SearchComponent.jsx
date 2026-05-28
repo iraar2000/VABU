@@ -43,7 +43,7 @@ function SearchComponent({filterValues}) {
         <div className="search-component">
             <div className="filters-container">
                 {/* setting the filter boxes and their values */}
-                {Object.values(filterValues).map((filter, index) =>
+                {Object.values(selectedValues).map((filterValue, index) =>
 
                     // this is where the drop-down element is created first
                     <div onClick={() => setDropDownVisible(prev => !prev)} key={`${filterKeys[index]}-${index}`} className={`container`}>
@@ -52,7 +52,7 @@ function SearchComponent({filterValues}) {
                         <button onClick={() => getFilterData(filterKeys[index])} className={`filter-value ${(dropDownKey === filterKeys[index])? "shadow" : ""}`}>
                             
                             {/* this is the name of the value selected in the dropdown element */}
-                            <div className="value">{selectedValues[filterKeys[index]]}</div>
+                            <div className="value">{filterValue}</div>
                             
                             {/* this is the dropdown icon and right icon */}
                             <div className="arrow">{(dropDownKey === filterKeys[index])?<FaAngleDown/> :<FaAngleRight/>}</div>
